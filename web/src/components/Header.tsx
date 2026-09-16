@@ -6,9 +6,10 @@ interface Props {
   onMode: (mode: Mode) => void;
   onReset?: () => void;
   canReset: boolean;
+  onShowDisruptions: () => void;
 }
 
-export function Header({ mode, onMode, onReset, canReset }: Props) {
+export function Header({ mode, onMode, onReset, canReset, onShowDisruptions }: Props) {
   const { lang, setLang, t } = useLanguage();
 
   return (
@@ -32,6 +33,12 @@ export function Header({ mode, onMode, onReset, canReset }: Props) {
       </nav>
 
       <div className="topbar-right">
+        <button className="ghost disruptions-button" onClick={onShowDisruptions} title={t.disruptionsTitle}>
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 3 1.8 20.5h20.4L12 3zM12 9v5M12 17.5v.01" />
+          </svg>
+          {t.disruptionsNav}
+        </button>
         <div className="langs" role="group">
           {LANGUAGES.map((l) => (
             <button

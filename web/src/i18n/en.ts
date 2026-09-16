@@ -64,6 +64,9 @@ export const en = {
   showMore: (n: number) => `Show ${n} more`,
   showFewer: "Show fewer",
   noConnections: "No connections found for that time.",
+  showCarriages: "Carriages",
+  hideCarriages: "Hide carriages",
+  loadingCarriages: "Loading carriages…",
   minToChange: (n: number) => `${n} min to change`,
   tight: "tight",
   platformShort: (p: string) => `platform ${p}`,
@@ -99,6 +102,7 @@ export const en = {
   prmSpace: "Reduced-mobility space",
   noComposition: "No composition published for this train.",
 
+  disruptionsNav: "Disruptions",
   disruptionsTitle: "Network disruptions",
   noDisruptions: "No active disruptions",
   showingOf: (shown: number, total: number) => `Showing ${shown} of ${total}`,

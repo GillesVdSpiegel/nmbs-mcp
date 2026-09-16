@@ -66,6 +66,9 @@ export const nl: Translations = {
   showMore: (n) => `Toon ${n} meer`,
   showFewer: "Toon minder",
   noConnections: "Geen verbindingen gevonden voor dat tijdstip.",
+  showCarriages: "Rijtuigen",
+  hideCarriages: "Rijtuigen verbergen",
+  loadingCarriages: "Rijtuigen laden…",
   minToChange: (n) => `${n} min overstaptijd`,
   tight: "krap",
   platformShort: (p) => `perron ${p}`,
@@ -101,6 +104,7 @@ export const nl: Translations = {
   prmSpace: "Plaats voor beperkte mobiliteit",
   noComposition: "Geen samenstelling bekend voor deze trein.",
 
+  disruptionsNav: "Storingen",
   disruptionsTitle: "Storingen op het net",
   noDisruptions: "Geen actieve storingen",
   showingOf: (shown, total) => `${shown} van ${total} getoond`,

@@ -203,6 +203,13 @@ a {
   cursor: default;
 }
 
+/* Not `.alert`: that class already styles service-alert blocks in amber. */
+.ghost.disruptions-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .thread {
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -782,6 +789,29 @@ a {
   font-size: 13px;
   padding: 2px 0 2px 58px;
   flex-wrap: wrap;
+}
+
+.leg-action {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.leg-action:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.leg-carriages {
+  flex-basis: 100%;
+  margin-top: 8px;
+}
+
+.leg-carriages .card {
+  box-shadow: none;
 }
 
 .transfer {

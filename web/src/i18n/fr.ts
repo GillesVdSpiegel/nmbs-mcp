@@ -67,6 +67,9 @@ export const fr: Translations = {
   showMore: (n) => `Afficher ${n} de plus`,
   showFewer: "Afficher moins",
   noConnections: "Aucune correspondance trouvée pour cet horaire.",
+  showCarriages: "Voitures",
+  hideCarriages: "Masquer les voitures",
+  loadingCarriages: "Chargement des voitures…",
   minToChange: (n) => `${n} min pour changer`,
   tight: "court",
   platformShort: (p) => `voie ${p}`,
@@ -102,6 +105,7 @@ export const fr: Translations = {
   prmSpace: "Espace mobilité réduite",
   noComposition: "Aucune composition publiée pour ce train.",
 
+  disruptionsNav: "Perturbations",
   disruptionsTitle: "Perturbations du réseau",
   noDisruptions: "Aucune perturbation en cours",
   showingOf: (shown, total) => `${shown} sur ${total} affichées`,

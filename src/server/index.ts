@@ -7,6 +7,12 @@ import { streamSSE } from "hono/streaming";
 import { z } from "zod/v4";
 import { contextFor, runChat } from "./agent.js";
 import { runQuery } from "./query.js";
+import { checkDisruptionsTool } from "../tools/check-disruptions.js";
+import { findStationTool } from "../tools/find-station.js";
+import { planJourneyTool } from "../tools/plan-journey.js";
+import { stationBoardTool } from "../tools/station-board.js";
+import { trackTrainTool } from "../tools/track-train.js";
+import { trainCompositionTool } from "../tools/train-composition.js";
 import { clearHistory } from "./sessions.js";
 import type { ChatEvent } from "./events.js";
 
@@ -55,6 +61,47 @@ app.post("/api/chat", async (c) => {
       await emit({ type: "error", message: describeError(e) });
     }
   });
+});
+
+/**
+ * Direct tool access for UI affordances that need data, not reasoning — a
+ * "show the carriages" button should not cost a model call. The allowlist and
+ * each tool's own Zod schema keep the surface exactly as wide as the six tools.
+ */
+const TOOLS = {
+  find_station: findStationTool,
+  plan_journey: planJourneyTool,
+  station_board: stationBoardTool,
+  track_train: trackTrainTool,
+  check_disruptions: checkDisruptionsTool,
+  train_composition: trainCompositionTool,
+} as const;
+
+const toolRequest = z.object({
+  tool: z.enum(Object.keys(TOOLS) as [keyof typeof TOOLS, ...Array<keyof typeof TOOLS>]),
+  input: z.record(z.string(), z.unknown()).default({}),
+  lang,
+});
+
+app.post("/api/tool", async (c) => {
+  const parsed = toolRequest.safeParse(await c.req.json().catch(() => null));
+  if (!parsed.success) return c.json({ error: "Expected { tool, input, lang }." }, 400);
+
+  const definition = TOOLS[parsed.data.tool];
+  const input = z.object(definition.inputSchema).safeParse(parsed.data.input);
+  if (!input.success) return c.json({ error: `Invalid input for ${parsed.data.tool}.` }, 400);
+
+  try {
+    const result = await definition.handler(input.data as never, contextFor(parsed.data.lang));
+    return c.json({
+      ok: !result.isError,
+      tool: parsed.data.tool,
+      payload: JSON.parse(result.content[0].text),
+    });
+  } catch (e) {
+    console.error("[tool]", e);
+    return c.json({ error: describeError(e) }, 502);
+  }
 });
 
 // No model, no streaming: one parse and one tool call.

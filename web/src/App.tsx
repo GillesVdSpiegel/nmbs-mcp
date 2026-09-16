@@ -69,6 +69,7 @@ function initialMode(): Mode {
 export function App() {
   const { lang, t } = useLanguage();
   const [mode, setMode] = useState<Mode>(initialMode);
+  const [disruptionsRequest, setDisruptionsRequest] = useState(0);
   const [sessionId, setSessionId] = useState(() => crypto.randomUUID());
   const [messages, setMessages] = useState<Message[]>([]);
   const [busy, setBusy] = useState(false);
@@ -159,10 +160,21 @@ export function App() {
 
   return (
     <div className="app">
-      <Header mode={mode} onMode={goTo} onReset={reset} canReset={messages.length > 0} />
+      <Header
+        mode={mode}
+        onMode={goTo}
+        onReset={reset}
+        canReset={messages.length > 0}
+        onShowDisruptions={() => {
+          // Disruptions are data, not a conversation — always answer on the
+          // direct page, whichever mode the button was pressed from.
+          goTo("direct");
+          setDisruptionsRequest((n) => n + 1);
+        }}
+      />
 
       {mode === "direct" ? (
-        <DirectSearch onAskAssistant={askAssistant} />
+        <DirectSearch onAskAssistant={askAssistant} disruptionsRequest={disruptionsRequest} />
       ) : (
         <>
           <div className="thread" ref={threadRef} onScroll={onScroll}>

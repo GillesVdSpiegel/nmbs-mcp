@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { callTool } from "../api";
 import { dateTime, duration, hhmm } from "../format";
-import { useT } from "../i18n";
-import type { Journey, Leg, PlanJourneyPayload, Platform } from "../types";
+import { useLanguage, useT } from "../i18n";
+import type { CompositionPayload, Journey, Leg, PlanJourneyPayload, Platform } from "../types";
+import { CompositionStrip } from "./CompositionStrip";
 import { CardHeader, DelayBadge, Occupancy, PlatformBadge, Time, TrainPill } from "./shared";
 
 export function JourneyCard({ payload }: { payload: PlanJourneyPayload }) {
@@ -127,6 +129,7 @@ function LegView({ leg, arrivedOn }: { leg: Leg; arrivedOn?: Platform }) {
             {leg.direction && <span className="muted">{t.towards(leg.direction)}</span>}
             <Occupancy level={leg.occupancy} />
             <DelayBadge time={leg.from.time} canceled={leg.from.canceled} />
+            <Carriages trainId={leg.vehicle.id} />
           </div>
           <div className="stop-row">
             <span className="stop-time">{hhmm(leg.to.time.actual ?? leg.to.time.scheduled)}</span>
@@ -136,6 +139,47 @@ function LegView({ leg, arrivedOn }: { leg: Leg; arrivedOn?: Platform }) {
         </div>
       </div>
     </div>
+  );
+}
+
+/**
+ * Fetches the composition for one leg on demand. It calls the tool directly
+ * rather than going through the model, so expanding a train costs nothing and
+ * works even without an API key.
+ */
+function Carriages({ trainId }: { trainId: string }) {
+  const { lang, t } = useLanguage();
+  const [open, setOpen] = useState(false);
+  const [payload, setPayload] = useState<CompositionPayload | null>(null);
+  const [state, setState] = useState<"idle" | "loading" | "error">("idle");
+
+  const toggle = async () => {
+    if (open) return setOpen(false);
+    setOpen(true);
+    if (payload || state === "loading") return;
+    setState("loading");
+    try {
+      const result = await callTool("train_composition", { train_id: trainId }, lang);
+      setPayload(result.payload as CompositionPayload);
+      setState("idle");
+    } catch {
+      setState("error");
+    }
+  };
+
+  return (
+    <>
+      <button className="leg-action" onClick={() => void toggle()} aria-expanded={open}>
+        {open ? t.hideCarriages : t.showCarriages}
+      </button>
+      {open && (
+        <div className="leg-carriages">
+          {state === "loading" && <div className="muted">{t.loadingCarriages}</div>}
+          {state === "error" && <div className="note error">{t.lookupFailed}</div>}
+          {payload && <CompositionStrip payload={payload} />}
+        </div>
+      )}
+    </>
   );
 }
 

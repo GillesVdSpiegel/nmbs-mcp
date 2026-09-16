@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { QueryOverrides, QueryResponse } from "@server/events";
+import { callTool } from "./api";
 import { dateTime } from "./format";
 import { useLanguage } from "./i18n";
 import { ToolResult } from "./renderers";
@@ -8,9 +9,11 @@ import type { StationRef } from "./types";
 interface Props {
   /** Hands an unparseable query to the chat mode. */
   onAskAssistant: (text: string) => void;
+  /** Increments when the header's disruptions button is pressed. */
+  disruptionsRequest: number;
 }
 
-export function DirectSearch({ onAskAssistant }: Props) {
+export function DirectSearch({ onAskAssistant, disruptionsRequest }: Props) {
   const { lang, t } = useLanguage();
   const [text, setText] = useState("");
   const [busy, setBusy] = useState(false);
@@ -45,6 +48,21 @@ export function DirectSearch({ onAskAssistant }: Props) {
 
   /** A fresh query starts from scratch; earlier answers no longer apply. */
   const search = (query: string) => void run(query, {});
+
+  // Driven by the header button. Calls the tool directly rather than routing a
+  // synthetic sentence back through the parser.
+  const seenRequest = useRef(disruptionsRequest);
+  useEffect(() => {
+    if (disruptionsRequest === seenRequest.current) return;
+    seenRequest.current = disruptionsRequest;
+    setBusy(true);
+    setError(null);
+    setText("");
+    callTool("check_disruptions", {}, lang)
+      .then((r) => setResult({ ok: r.ok, tool: r.tool, payload: r.payload, interpretation: { intent: "disruptions" } }))
+      .catch(() => setError(t.serverUnreachable))
+      .finally(() => setBusy(false));
+  }, [disruptionsRequest, lang, t]);
 
   /**
    * Re-runs the same sentence with this station pinned to the field that was
