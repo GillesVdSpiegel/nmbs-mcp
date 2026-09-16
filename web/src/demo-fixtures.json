@@ -1,0 +1,1307 @@
+{
+  "station_board": {
+    "input": {
+      "station": "Leuven",
+      "direction": "departures",
+      "window_minutes": 45
+    },
+    "payload": {
+      "station": "Leuven",
+      "stationId": "BE.NMBS.008833001",
+      "direction": "departures",
+      "windowMinutes": 45,
+      "count": 10,
+      "entries": [
+        {
+          "vehicle": {
+            "id": "BE.NMBS.IC513",
+            "name": "IC 513",
+            "type": "IC",
+            "number": "513"
+          },
+          "destination": "Eupen",
+          "platform": {
+            "number": "3",
+            "changed": false
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:27:00.000Z",
+            "actual": "2026-09-16T14:16:00.000Z",
+            "delayMinutes": 49
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "low"
+        },
+        {
+          "vehicle": {
+            "id": "BE.NMBS.IC4137",
+            "name": "IC 4137",
+            "type": "IC",
+            "number": "4137"
+          },
+          "destination": "Ghent-Sint-Pieters",
+          "platform": {
+            "number": "7",
+            "changed": false
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:46:00.000Z",
+            "actual": "2026-09-16T13:46:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "low"
+        },
+        {
+          "vehicle": {
+            "id": "BE.NMBS.L6965",
+            "name": "L 6965",
+            "type": "L",
+            "number": "6965"
+          },
+          "destination": "Landen",
+          "platform": {
+            "number": "8",
+            "changed": true
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:47:00.000Z",
+            "actual": "2026-09-16T13:47:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "low"
+        },
+        {
+          "vehicle": {
+            "id": "BE.NMBS.IC1737",
+            "name": "IC 1737",
+            "type": "IC",
+            "number": "1737"
+          },
+          "destination": "Quievrain",
+          "platform": {
+            "number": "6",
+            "changed": true
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:50:00.000Z",
+            "actual": "2026-09-16T13:50:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "low"
+        },
+        {
+          "vehicle": {
+            "id": "BE.NMBS.S203086",
+            "name": "S20 3086",
+            "type": "S20",
+            "number": "3086"
+          },
+          "destination": "Ottignies",
+          "platform": {
+            "number": "D",
+            "changed": false
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:55:00.000Z",
+            "actual": "2026-09-16T13:55:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "low"
+        },
+        {
+          "vehicle": {
+            "id": "BE.NMBS.S93287",
+            "name": "S9 3287",
+            "type": "S9",
+            "number": "3287"
+          },
+          "destination": "Nivelles",
+          "platform": {
+            "number": "1",
+            "changed": false
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:55:00.000Z",
+            "actual": "2026-09-16T13:55:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "low"
+        },
+        {
+          "vehicle": {
+            "id": "BE.NMBS.IC2813",
+            "name": "IC 2813",
+            "type": "IC",
+            "number": "2813"
+          },
+          "destination": "Liège-Guillemins",
+          "platform": {
+            "number": "4",
+            "changed": false
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:56:00.000Z",
+            "actual": "2026-09-16T13:56:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "low"
+        },
+        {
+          "vehicle": {
+            "id": "BE.NMBS.L13248",
+            "name": "L 13248",
+            "type": "L",
+            "number": "13248"
+          },
+          "destination": "Aarschot",
+          "platform": {
+            "number": "9",
+            "changed": false
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:56:00.000Z",
+            "actual": "2026-09-16T13:56:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "unknown"
+        },
+        {
+          "vehicle": {
+            "id": "BE.NMBS.IC414",
+            "name": "IC 414",
+            "type": "IC",
+            "number": "414"
+          },
+          "destination": "Welkenraedt",
+          "platform": {
+            "number": "3",
+            "changed": false
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:58:00.000Z",
+            "actual": "2026-09-16T13:58:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "low"
+        },
+        {
+          "vehicle": {
+            "id": "BE.NMBS.IC1537",
+            "name": "IC 1537",
+            "type": "IC",
+            "number": "1537"
+          },
+          "destination": "Blankenberge",
+          "platform": {
+            "number": "2",
+            "changed": false
+          },
+          "time": {
+            "scheduled": "2026-09-16T13:59:00.000Z",
+            "actual": "2026-09-16T13:59:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "isExtra": false,
+          "left": false,
+          "occupancy": "low"
+        }
+      ]
+    }
+  },
+  "plan_journey": {
+    "input": {
+      "from": "Leuven",
+      "to": "Oostende"
+    },
+    "payload": {
+      "from": {
+        "id": "BE.NMBS.008833001",
+        "name": "Leuven"
+      },
+      "to": {
+        "id": "BE.NMBS.008891702",
+        "name": "Oostende"
+      },
+      "when": "now",
+      "arriveBy": false,
+      "count": 6,
+      "journeys": [
+        {
+          "departure": {
+            "station": "Leuven",
+            "stationId": "BE.NMBS.008833001",
+            "platform": {
+              "number": "2",
+              "changed": false
+            },
+            "time": {
+              "scheduled": "2026-09-16T14:05:00.000Z",
+              "actual": "2026-09-16T14:05:00.000Z",
+              "delayMinutes": 0
+            },
+            "canceled": false,
+            "direction": "Kortrijk"
+          },
+          "arrival": {
+            "station": "Oostende",
+            "stationId": "BE.NMBS.008891702",
+            "platform": {
+              "number": "5",
+              "changed": false
+            },
+            "time": {
+              "scheduled": "2026-09-16T15:51:00.000Z",
+              "actual": "2026-09-16T15:51:00.000Z",
+              "delayMinutes": 0
+            },
+            "canceled": false
+          },
+          "durationMinutes": 106,
+          "transfers": 1,
+          "legs": [
+            {
+              "vehicle": {
+                "id": "BE.NMBS.IC437",
+                "name": "IC 437",
+                "type": "IC",
+                "number": "437"
+              },
+              "direction": "Kortrijk",
+              "from": {
+                "station": "Leuven",
+                "stationId": "BE.NMBS.008833001",
+                "platform": {
+                  "number": "2",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T14:05:00.000Z",
+                  "actual": "2026-09-16T14:05:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "to": {
+                "station": "Ghent-Sint-Pieters",
+                "stationId": "BE.NMBS.008892007",
+                "platform": {
+                  "number": "11",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T15:06:00.000Z",
+                  "actual": "2026-09-16T15:06:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "occupancy": "low",
+              "walking": false
+            },
+            {
+              "vehicle": {
+                "id": "BE.NMBS.IC1837",
+                "name": "IC 1837",
+                "type": "IC",
+                "number": "1837"
+              },
+              "direction": "Oostende",
+              "from": {
+                "station": "Ghent-Sint-Pieters",
+                "stationId": "BE.NMBS.008892007",
+                "platform": {
+                  "number": "6",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T15:11:00.000Z",
+                  "actual": "2026-09-16T15:11:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "to": {
+                "station": "Oostende",
+                "stationId": "BE.NMBS.008891702",
+                "platform": {
+                  "number": "5",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T15:51:00.000Z",
+                  "actual": "2026-09-16T15:51:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "occupancy": "low",
+              "walking": false,
+              "transferMinutes": 5
+            }
+          ]
+        },
+        {
+          "departure": {
+            "station": "Leuven",
+            "stationId": "BE.NMBS.008833001",
+            "platform": {
+              "number": "2",
+              "changed": false
+            },
+            "time": {
+              "scheduled": "2026-09-16T14:36:00.000Z",
+              "actual": "2026-09-16T14:36:00.000Z",
+              "delayMinutes": 0
+            },
+            "canceled": false,
+            "direction": "Oostende"
+          },
+          "arrival": {
+            "station": "Oostende",
+            "stationId": "BE.NMBS.008891702",
+            "platform": {
+              "number": "4",
+              "changed": false
+            },
+            "time": {
+              "scheduled": "2026-09-16T16:17:00.000Z",
+              "actual": "2026-09-16T16:17:00.000Z",
+              "delayMinutes": 0
+            },
+            "canceled": false
+          },
+          "durationMinutes": 101,
+          "transfers": 0,
+          "legs": [
+            {
+              "vehicle": {
+                "id": "BE.NMBS.IC538",
+                "name": "IC 538",
+                "type": "IC",
+                "number": "538"
+              },
+              "direction": "Oostende",
+              "from": {
+                "station": "Leuven",
+                "stationId": "BE.NMBS.008833001",
+                "platform": {
+                  "number": "2",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T14:36:00.000Z",
+                  "actual": "2026-09-16T14:36:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "to": {
+                "station": "Oostende",
+                "stationId": "BE.NMBS.008891702",
+                "platform": {
+                  "number": "4",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T16:17:00.000Z",
+                  "actual": "2026-09-16T16:17:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "occupancy": "low",
+              "walking": false
+            }
+          ]
+        },
+        {
+          "departure": {
+            "station": "Leuven",
+            "stationId": "BE.NMBS.008833001",
+            "platform": {
+              "number": "2",
+              "changed": false
+            },
+            "time": {
+              "scheduled": "2026-09-16T15:06:00.000Z",
+              "actual": "2026-09-16T15:06:00.000Z",
+              "delayMinutes": 0
+            },
+            "canceled": false,
+            "direction": "Kortrijk"
+          },
+          "arrival": {
+            "station": "Oostende",
+            "stationId": "BE.NMBS.008891702",
+            "platform": {
+              "number": "5",
+              "changed": false
+            },
+            "time": {
+              "scheduled": "2026-09-16T16:52:00.000Z",
+              "actual": "2026-09-16T16:52:00.000Z",
+              "delayMinutes": 0
+            },
+            "canceled": false
+          },
+          "durationMinutes": 106,
+          "transfers": 1,
+          "legs": [
+            {
+              "vehicle": {
+                "id": "BE.NMBS.IC438",
+                "name": "IC 438",
+                "type": "IC",
+                "number": "438"
+              },
+              "direction": "Kortrijk",
+              "from": {
+                "station": "Leuven",
+                "stationId": "BE.NMBS.008833001",
+                "platform": {
+                  "number": "2",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T15:06:00.000Z",
+                  "actual": "2026-09-16T15:06:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "to": {
+                "station": "Ghent-Sint-Pieters",
+                "stationId": "BE.NMBS.008892007",
+                "platform": {
+                  "number": "11",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T16:06:00.000Z",
+                  "actual": "2026-09-16T16:06:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "occupancy": "low",
+              "walking": false
+            },
+            {
+              "vehicle": {
+                "id": "BE.NMBS.IC1838",
+                "name": "IC 1838",
+                "type": "IC",
+                "number": "1838"
+              },
+              "direction": "Oostende",
+              "from": {
+                "station": "Ghent-Sint-Pieters",
+                "stationId": "BE.NMBS.008892007",
+                "platform": {
+                  "number": "6",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T16:11:00.000Z",
+                  "actual": "2026-09-16T16:12:00.000Z",
+                  "delayMinutes": 1
+                },
+                "canceled": false
+              },
+              "to": {
+                "station": "Oostende",
+                "stationId": "BE.NMBS.008891702",
+                "platform": {
+                  "number": "5",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T16:52:00.000Z",
+                  "actual": "2026-09-16T16:52:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "occupancy": "low",
+              "walking": false,
+              "transferMinutes": 6
+            }
+          ]
+        },
+        {
+          "departure": {
+            "station": "Leuven",
+            "stationId": "BE.NMBS.008833001",
+            "platform": {
+              "number": "2",
+              "changed": false
+            },
+            "time": {
+              "scheduled": "2026-09-16T15:36:00.000Z",
+              "actual": "2026-09-16T15:36:00.000Z",
+              "delayMinutes": 0
+            },
+            "canceled": false,
+            "direction": "Oostende"
+          },
+          "arrival": {
+            "station": "Oostende",
+            "stationId": "BE.NMBS.008891702",
+            "platform": {
+              "number": "3",
+              "changed": false
+            },
+            "time": {
+              "scheduled": "2026-09-16T17:17:00.000Z",
+              "actual": "2026-09-16T17:17:00.000Z",
+              "delayMinutes": 0
+            },
+            "canceled": false
+          },
+          "durationMinutes": 101,
+          "transfers": 0,
+          "legs": [
+            {
+              "vehicle": {
+                "id": "BE.NMBS.IC539",
+                "name": "IC 539",
+                "type": "IC",
+                "number": "539"
+              },
+              "direction": "Oostende",
+              "from": {
+                "station": "Leuven",
+                "stationId": "BE.NMBS.008833001",
+                "platform": {
+                  "number": "2",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T15:36:00.000Z",
+                  "actual": "2026-09-16T15:36:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "to": {
+                "station": "Oostende",
+                "stationId": "BE.NMBS.008891702",
+                "platform": {
+                  "number": "3",
+                  "changed": false
+                },
+                "time": {
+                  "scheduled": "2026-09-16T17:17:00.000Z",
+                  "actual": "2026-09-16T17:17:00.000Z",
+                  "delayMinutes": 0
+                },
+                "canceled": false
+              },
+              "occupancy": "low",
+              "walking": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "track_train": {
+    "input": {
+      "train_id": "BE.NMBS.IC513"
+    },
+    "payload": {
+      "train": {
+        "id": "BE.NMBS.IC513",
+        "name": "IC 513",
+        "type": "IC",
+        "number": "513"
+      },
+      "date": "160926",
+      "currentPosition": {
+        "latitude": 51.035896,
+        "longitude": 3.710675
+      },
+      "stopCount": 11,
+      "stops": [
+        {
+          "station": "Oostende",
+          "stationId": "BE.NMBS.008891702",
+          "platform": {
+            "number": "3",
+            "changed": false
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T11:42:00.000Z",
+            "actual": "2026-09-16T11:42:00.000Z",
+            "delayMinutes": 0
+          },
+          "departure": {
+            "scheduled": "2026-09-16T11:42:00.000Z",
+            "actual": "2026-09-16T12:10:00.000Z",
+            "delayMinutes": 28
+          },
+          "canceled": false,
+          "arrived": true,
+          "left": true,
+          "isExtraStop": false,
+          "occupancy": "low"
+        },
+        {
+          "station": "Brugge",
+          "stationId": "BE.NMBS.008891009",
+          "platform": {
+            "number": "9",
+            "changed": false
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T11:55:00.000Z",
+            "actual": "2026-09-16T12:24:00.000Z",
+            "delayMinutes": 29
+          },
+          "departure": {
+            "scheduled": "2026-09-16T11:58:00.000Z",
+            "actual": "2026-09-16T12:51:00.000Z",
+            "delayMinutes": 53
+          },
+          "canceled": false,
+          "arrived": true,
+          "left": true,
+          "isExtraStop": false,
+          "occupancy": "low"
+        },
+        {
+          "station": "Ghent-Sint-Pieters",
+          "stationId": "BE.NMBS.008892007",
+          "platform": {
+            "number": "11",
+            "changed": true
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T12:20:00.000Z",
+            "actual": "2026-09-16T13:16:00.000Z",
+            "delayMinutes": 56
+          },
+          "departure": {
+            "scheduled": "2026-09-16T12:25:00.000Z",
+            "actual": "2026-09-16T13:19:00.000Z",
+            "delayMinutes": 54
+          },
+          "canceled": false,
+          "arrived": true,
+          "left": true,
+          "isExtraStop": false,
+          "occupancy": "low"
+        },
+        {
+          "station": "Brussels-South/Brussels-Midi",
+          "stationId": "BE.NMBS.008814001",
+          "platform": {
+            "number": "6",
+            "changed": true
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T12:53:00.000Z",
+            "actual": "2026-09-16T13:48:00.000Z",
+            "delayMinutes": 55
+          },
+          "departure": {
+            "scheduled": "2026-09-16T12:56:00.000Z",
+            "actual": "2026-09-16T13:50:00.000Z",
+            "delayMinutes": 54
+          },
+          "canceled": false,
+          "arrived": false,
+          "left": false,
+          "isExtraStop": false,
+          "occupancy": "low"
+        },
+        {
+          "station": "Brussels-Central",
+          "stationId": "BE.NMBS.008813003",
+          "platform": {
+            "number": "1",
+            "changed": false
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T13:00:00.000Z",
+            "actual": "2026-09-16T13:54:00.000Z",
+            "delayMinutes": 54
+          },
+          "departure": {
+            "scheduled": "2026-09-16T13:01:00.000Z",
+            "actual": "2026-09-16T13:55:00.000Z",
+            "delayMinutes": 54
+          },
+          "canceled": false,
+          "arrived": false,
+          "left": false,
+          "isExtraStop": false,
+          "occupancy": "low"
+        },
+        {
+          "station": "Brussels-North",
+          "stationId": "BE.NMBS.008812005",
+          "platform": {
+            "number": "2",
+            "changed": true
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T13:05:00.000Z",
+            "actual": "2026-09-16T13:59:00.000Z",
+            "delayMinutes": 54
+          },
+          "departure": {
+            "scheduled": "2026-09-16T13:08:00.000Z",
+            "actual": "2026-09-16T14:01:00.000Z",
+            "delayMinutes": 53
+          },
+          "canceled": false,
+          "arrived": false,
+          "left": false,
+          "isExtraStop": false,
+          "occupancy": "low"
+        },
+        {
+          "station": "Leuven",
+          "stationId": "BE.NMBS.008833001",
+          "platform": {
+            "number": "3",
+            "changed": false
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T13:23:00.000Z",
+            "actual": "2026-09-16T14:15:00.000Z",
+            "delayMinutes": 52
+          },
+          "departure": {
+            "scheduled": "2026-09-16T13:27:00.000Z",
+            "actual": "2026-09-16T14:17:00.000Z",
+            "delayMinutes": 50
+          },
+          "canceled": false,
+          "arrived": false,
+          "left": false,
+          "isExtraStop": false,
+          "occupancy": "low"
+        },
+        {
+          "station": "Liège-Guillemins",
+          "stationId": "BE.NMBS.008841004",
+          "platform": {
+            "number": "1",
+            "changed": false
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T13:59:00.000Z",
+            "actual": "2026-09-16T14:43:00.000Z",
+            "delayMinutes": 44
+          },
+          "departure": {
+            "scheduled": "2026-09-16T14:03:00.000Z",
+            "actual": "2026-09-16T14:45:00.000Z",
+            "delayMinutes": 42
+          },
+          "canceled": false,
+          "arrived": false,
+          "left": false,
+          "isExtraStop": false,
+          "occupancy": "low"
+        },
+        {
+          "station": "Verviers-Central",
+          "stationId": "BE.NMBS.008844008",
+          "platform": {
+            "number": "3",
+            "changed": false
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T14:21:00.000Z",
+            "actual": "2026-09-16T15:00:00.000Z",
+            "delayMinutes": 39
+          },
+          "departure": {
+            "scheduled": "2026-09-16T14:23:00.000Z",
+            "actual": "2026-09-16T15:01:00.000Z",
+            "delayMinutes": 38
+          },
+          "canceled": false,
+          "arrived": false,
+          "left": false,
+          "isExtraStop": false,
+          "occupancy": "unknown"
+        },
+        {
+          "station": "Welkenraedt",
+          "stationId": "BE.NMBS.008844503",
+          "platform": {
+            "number": "5",
+            "changed": false
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T14:33:00.000Z",
+            "actual": "2026-09-16T15:10:00.000Z",
+            "delayMinutes": 37
+          },
+          "departure": {
+            "scheduled": "2026-09-16T14:35:00.000Z",
+            "actual": "2026-09-16T15:11:00.000Z",
+            "delayMinutes": 36
+          },
+          "canceled": false,
+          "arrived": false,
+          "left": false,
+          "isExtraStop": false,
+          "occupancy": "unknown"
+        },
+        {
+          "station": "Eupen",
+          "stationId": "BE.NMBS.008844628",
+          "platform": {
+            "number": "2",
+            "changed": false
+          },
+          "arrival": {
+            "scheduled": "2026-09-16T14:42:00.000Z",
+            "actual": "2026-09-16T15:17:00.000Z",
+            "delayMinutes": 35
+          },
+          "departure": {
+            "scheduled": "2026-09-16T14:42:00.000Z",
+            "actual": "2026-09-16T14:42:00.000Z",
+            "delayMinutes": 0
+          },
+          "canceled": false,
+          "arrived": false,
+          "left": false,
+          "isExtraStop": false
+        }
+      ]
+    }
+  },
+  "train_composition": {
+    "input": {
+      "train_id": "BE.NMBS.IC513"
+    },
+    "payload": {
+      "train": "IC513",
+      "segments": [
+        {
+          "origin": "Oostende",
+          "destination": "Eupen",
+          "source": "IDA",
+          "carriageCount": 12,
+          "totals": {
+            "seatsFirstClass": 174,
+            "seatsSecondClass": 971,
+            "lengthMeters": 302,
+            "bikeSections": 2,
+            "prmSections": 1
+          },
+          "units": [
+            {
+              "position": 1,
+              "materialType": "HLE18",
+              "materialNumber": "1884",
+              "tractionType": "HLE",
+              "seatsFirstClass": 0,
+              "seatsSecondClass": 0,
+              "standingPlaces": 0,
+              "lengthMeters": 20,
+              "hasToilets": false,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": false,
+              "hasAirco": false,
+              "hasPowerOutlets": false,
+              "canPassToNextUnit": false
+            },
+            {
+              "position": 2,
+              "materialType": "M7-BUH",
+              "materialNumber": "72149",
+              "tractionType": "HV",
+              "seatsFirstClass": 0,
+              "seatsSecondClass": 140,
+              "standingPlaces": 0,
+              "lengthMeters": 27,
+              "hasToilets": true,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": true,
+              "hasAirco": true,
+              "hasPowerOutlets": true,
+              "canPassToNextUnit": true
+            },
+            {
+              "position": 3,
+              "materialType": "M7-BUH",
+              "materialNumber": "72016",
+              "tractionType": "HV",
+              "seatsFirstClass": 0,
+              "seatsSecondClass": 140,
+              "standingPlaces": 0,
+              "lengthMeters": 27,
+              "hasToilets": true,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": true,
+              "hasAirco": true,
+              "hasPowerOutlets": true,
+              "canPassToNextUnit": true
+            },
+            {
+              "position": 4,
+              "materialType": "M7-ABUH",
+              "materialNumber": "73018",
+              "tractionType": "HV",
+              "seatsFirstClass": 58,
+              "seatsSecondClass": 74,
+              "standingPlaces": 0,
+              "lengthMeters": 27,
+              "hasToilets": true,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": true,
+              "hasAirco": true,
+              "hasPowerOutlets": true,
+              "canPassToNextUnit": true
+            },
+            {
+              "position": 5,
+              "materialType": "M7-ABUH",
+              "materialNumber": "73013",
+              "tractionType": "HV",
+              "seatsFirstClass": 58,
+              "seatsSecondClass": 74,
+              "standingPlaces": 0,
+              "lengthMeters": 27,
+              "hasToilets": true,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": true,
+              "hasAirco": true,
+              "hasPowerOutlets": true,
+              "canPassToNextUnit": true
+            },
+            {
+              "position": 6,
+              "materialType": "M7-BDH",
+              "materialNumber": "79006",
+              "tractionType": "HV",
+              "seatsFirstClass": 0,
+              "seatsSecondClass": 103,
+              "standingPlaces": 0,
+              "lengthMeters": 27,
+              "hasToilets": false,
+              "hasBikeSection": true,
+              "hasPrmSection": true,
+              "hasPriorityPlaces": false,
+              "hasAirco": true,
+              "hasPowerOutlets": true,
+              "canPassToNextUnit": true
+            },
+            {
+              "position": 7,
+              "materialType": "M7-ABUH",
+              "materialNumber": "73032",
+              "tractionType": "HV",
+              "seatsFirstClass": 58,
+              "seatsSecondClass": 74,
+              "standingPlaces": 0,
+              "lengthMeters": 27,
+              "hasToilets": true,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": true,
+              "hasAirco": true,
+              "hasPowerOutlets": true,
+              "canPassToNextUnit": true
+            },
+            {
+              "position": 8,
+              "materialType": "M7-BUH",
+              "materialNumber": "72022",
+              "tractionType": "HV",
+              "seatsFirstClass": 0,
+              "seatsSecondClass": 140,
+              "standingPlaces": 0,
+              "lengthMeters": 27,
+              "hasToilets": true,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": true,
+              "hasAirco": true,
+              "hasPowerOutlets": true,
+              "canPassToNextUnit": true
+            },
+            {
+              "position": 9,
+              "materialType": "M7-BUH",
+              "materialNumber": "72028",
+              "tractionType": "HV",
+              "seatsFirstClass": 0,
+              "seatsSecondClass": 140,
+              "standingPlaces": 0,
+              "lengthMeters": 27,
+              "hasToilets": true,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": true,
+              "hasAirco": true,
+              "hasPowerOutlets": true,
+              "canPassToNextUnit": true
+            },
+            {
+              "position": 10,
+              "materialType": "I10-BUH",
+              "materialNumber": "12759",
+              "tractionType": "HV",
+              "seatsFirstClass": 0,
+              "seatsSecondClass": 86,
+              "standingPlaces": 0,
+              "lengthMeters": 26,
+              "hasToilets": true,
+              "hasBikeSection": true,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": true,
+              "hasAirco": true,
+              "hasPowerOutlets": false,
+              "canPassToNextUnit": true
+            },
+            {
+              "position": 11,
+              "materialType": "HLE18",
+              "materialNumber": "1812",
+              "tractionType": "HLE",
+              "seatsFirstClass": 0,
+              "seatsSecondClass": 0,
+              "standingPlaces": 0,
+              "lengthMeters": 20,
+              "hasToilets": false,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": false,
+              "hasAirco": false,
+              "hasPowerOutlets": false,
+              "canPassToNextUnit": false
+            },
+            {
+              "position": 12,
+              "materialType": "HLE18",
+              "materialNumber": "1864",
+              "tractionType": "HLE",
+              "seatsFirstClass": 0,
+              "seatsSecondClass": 0,
+              "standingPlaces": 0,
+              "lengthMeters": 20,
+              "hasToilets": false,
+              "hasBikeSection": false,
+              "hasPrmSection": false,
+              "hasPriorityPlaces": false,
+              "hasAirco": false,
+              "hasPowerOutlets": false,
+              "canPassToNextUnit": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "check_disruptions": {
+    "input": {
+      "limit": 5
+    },
+    "payload": {
+      "total": 45,
+      "returned": 5,
+      "disruptions": [
+        {
+          "title": "Anvers-Sud / Antwerpen-Zuid: No trains",
+          "description": "Between Anvers-Sud / Antwerpen-Zuid and Saint-Nicolas / Sint-Niklaas:\nTrain traffic is interrupted.\nYou can use a replacement bus of the SNCB-NMBS with your train ticket.\n\nBetween Anvers-Berchem / Antwerpen-Berchem and Saint-Nicolas / Sint-Niklaas/Puurs:\nWe advise you to travel via Malines / Mechelen.\n\nDisruption for an undetermined amount of time.\nListen to the announcements, consult the screens in the station or plan your journey through belgiantrain.be or the SNCB-NMBS app.\n\n\nCause: defective train\nWaar is mijn bushalte? \nOù prendre mon bus ?",
+          "type": "disturbance",
+          "link": "https://www.belgianrail.be/jp/download/brail_him/1789566156151_Sint_Niklaas_Antwerpren_Zuid.pdf",
+          "updatedAt": "2026-09-16T13:42:36.000Z",
+          "attachments": [
+            {
+              "text": "Waar is mijn bushalte? ",
+              "link": "https://www.belgianrail.be/jp/download/brail_him/1789566156151_Sint_Niklaas_Antwerpren_Zuid.pdf"
+            },
+            {
+              "text": "Où prendre mon bus ? ",
+              "link": "https://www.belgianrail.be/jp/download/brail_him/1789566156168_Sint_Niklaas_Antwerpren_Zuid.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Ciney - Namur / Namen: Situation restored",
+          "description": "The problem has been solved.\nDelays remain possible.\n\nListen to the announcements, consult the screens in the station or plan your journey through belgiantrain.be or the SNCB-NMBS app.\n\n\nCause: defective train near Assesse.",
+          "type": "disturbance",
+          "link": "http://www.belgianrail.be/jp/nmbs-realtime/help.exe/en?tpl=showmap_external&tplParamHimMsgInfoGroup=trouble&messageID=113175&channelFilter=custom1&",
+          "updatedAt": "2026-09-16T13:39:59.000Z",
+          "attachments": [
+            {
+              "text": "Read more",
+              "link": "http://www.belgianrail.be/jp/nmbs-realtime/help.exe/en?tpl=showmap_external&tplParamHimMsgInfoGroup=trouble&messageID=113175&channelFilter=custom1&"
+            }
+          ]
+        },
+        {
+          "title": "Luttre - Manage: No trains",
+          "description": "Train traffic is interrupted.\nYou can use a replacement bus of the SNCB-NMBS with your train ticket.\n\nDisruption for an undetermined amount of time.\nListen to the announcements, consult the screens in the station or plan your journey through belgiantrain.be or the SNCB-NMBS app.\n\n\nCause: defective train in Godarville.\n\nWaar is mijn bushalte?\nOù prendre mon bus?",
+          "type": "disturbance",
+          "link": "https://www.belgianrail.be/jp/download/brail_him/1789563782768_L117_Manage_Luttre_1.pdf",
+          "updatedAt": "2026-09-16T13:29:45.000Z",
+          "attachments": [
+            {
+              "text": "Waar is mijn bushalte?",
+              "link": "https://www.belgianrail.be/jp/download/brail_him/1789563782768_L117_Manage_Luttre_1.pdf"
+            },
+            {
+              "text": "Où prendre mon bus?",
+              "link": "https://www.belgianrail.be/jp/download/brail_him/1789563782789_L117_Manage_Luttre_1.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Quiévrain - Saint-Ghislain: No trains",
+          "description": "Train traffic is interrupted.\nYou can use a bus of the SNCB-NMBS with your train ticket.\n\nThe disruption is due to end on 17.09.26 at around 12:00.\nListen to the announcements, consult the screens in the station or plan your journey through belgiantrain.be or the SNCB-NMBS app.\n\n\nCause: vandalism near Quiévrain.\n\nOù prendre mon bus ?\nWaar is mijn bushalte?",
+          "type": "disturbance",
+          "link": "https://www.belgianrail.be/jp/download/brail_him/1789542805800_Saint_Ghislain_Qui_vrain.pdf",
+          "updatedAt": "2026-09-16T11:51:45.000Z",
+          "attachments": [
+            {
+              "text": "Où prendre mon bus ?",
+              "link": "https://www.belgianrail.be/jp/download/brail_him/1789542805800_Saint_Ghislain_Qui_vrain.pdf"
+            },
+            {
+              "text": "Waar is mijn bushalte?",
+              "link": "https://www.belgianrail.be/jp/download/brail_him/1789542805815_Saint_Ghislain_Qui_vrain.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Charleroi-Central - Erquelinnes: Delays and cancellations",
+          "description": "Between Lobbes and Erquelinnes:\nTrain traffic on one track. \n\nDisruption for an undetermined amount of time.\nListen to the announcements, consult the screens in the station or plan your journey through belgiantrain.be or the SNCB-NMBS app.\n\n\nCause: defective train in Labuissière.",
+          "type": "disturbance",
+          "link": "http://www.belgianrail.be/jp/nmbs-realtime/help.exe/en?tpl=showmap_external&tplParamHimMsgInfoGroup=trouble&messageID=113164&channelFilter=custom1&",
+          "updatedAt": "2026-09-16T10:41:23.000Z",
+          "attachments": [
+            {
+              "text": "Read more",
+              "link": "http://www.belgianrail.be/jp/nmbs-realtime/help.exe/en?tpl=showmap_external&tplParamHimMsgInfoGroup=trouble&messageID=113164&channelFilter=custom1&"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "find_station": {
+    "input": {
+      "query": "Brussel",
+      "limit": 5
+    },
+    "payload": {
+      "query": "Brussel",
+      "count": 5,
+      "matches": [
+        {
+          "id": "BE.NMBS.008812005",
+          "name": "Brussels-North",
+          "standardName": "Brussel-Noord/Bruxelles-Nord",
+          "names": {
+            "nl": "Brussel-Noord",
+            "fr": "Bruxelles-Nord",
+            "en": "Brussels-North",
+            "de": "Brussel-Noord/Bruxelles-Nord"
+          },
+          "latitude": 50.859663,
+          "longitude": 4.360846,
+          "score": 92
+        },
+        {
+          "id": "BE.NMBS.008814001",
+          "name": "Brussels-South/Brussels-Midi",
+          "standardName": "Brussel-Zuid/Bruxelles-Midi",
+          "names": {
+            "nl": "Brussel-Zuid",
+            "fr": "Bruxelles-Midi",
+            "en": "Brussels-South/Brussels-Midi",
+            "de": "Brussel-Zuid/Bruxelles-Midi"
+          },
+          "latitude": 50.835707,
+          "longitude": 4.336531,
+          "score": 92
+        },
+        {
+          "id": "BE.NMBS.008815040",
+          "name": "Brussels-West",
+          "standardName": "Brussel-West/Bruxelles-Ouest",
+          "names": {
+            "nl": "Brussel-West",
+            "fr": "Bruxelles-Ouest",
+            "en": "Brussels-West",
+            "de": "Brussel-West/Bruxelles-Ouest"
+          },
+          "latitude": 50.848552,
+          "longitude": 4.321042,
+          "score": 92
+        },
+        {
+          "id": "BE.NMBS.008813003",
+          "name": "Brussels-Central",
+          "standardName": "Brussel-Centraal/Bruxelles-Central",
+          "names": {
+            "nl": "Brussel-Centraal",
+            "fr": "Bruxelles-Central",
+            "en": "Brussels-Central",
+            "de": "Brussel-Centraal/Bruxelles-Central"
+          },
+          "latitude": 50.845658,
+          "longitude": 4.356801,
+          "score": 91
+        },
+        {
+          "id": "BE.NMBS.008813037",
+          "name": "Brussels-Chapelle/Brussels-Kapellekerk",
+          "standardName": "Brussel-Kapellekerk/Bruxelles-Chapelle",
+          "names": {
+            "nl": "Brussel-Kapellekerk",
+            "fr": "Bruxelles-Chapelle",
+            "en": "Brussels-Chapelle/Brussels-Kapellekerk",
+            "de": "Brussel-Kapellekerk/Bruxelles-Chapelle"
+          },
+          "latitude": 50.841127,
+          "longitude": 4.347866,
+          "score": 91
+        }
+      ]
+    }
+  }
+}

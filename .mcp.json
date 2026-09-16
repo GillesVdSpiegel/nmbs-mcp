@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nmbs": {
+      "command": "node",
+      "args": ["C:\\claude\\MCP\\dist\\index.js"]
+    }
+  }
+}
