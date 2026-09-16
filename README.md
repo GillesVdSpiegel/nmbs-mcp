@@ -130,7 +130,7 @@ npm install
 npm run build
 ```
 
-**As an MCP server** — register the built entrypoint with an absolute path:
+**As an MCP server** — a project-scoped [`.mcp.json`](.mcp.json) is included, so opening this directory in Claude Code offers the server directly. To register it globally instead, use an absolute path:
 
 ```json
 {

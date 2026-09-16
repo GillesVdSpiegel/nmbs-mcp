@@ -2,7 +2,7 @@
   "mcpServers": {
     "nmbs": {
       "command": "node",
-      "args": ["C:\\claude\\MCP\\dist\\index.js"]
+      "args": ["dist/index.js"]
     }
   }
 }
